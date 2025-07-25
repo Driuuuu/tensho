@@ -1,0 +1,23 @@
+@use "../vars/variables" as *;
+.aboutus-banner {
+  background: url(https://www.paxinasgalegas.es/imagenes/etham-clay_img693243t0m0w1600h800.jpg);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  color: $color-blanco;
+  display: flex;
+  align-items: center;
+  background-color: $color-negro;
+  background-blend-mode: lighten;
+
+  &__title{
+    background-color: $color-negro;
+    padding: 1rem;
+  }
+}
+
+.aboutus{
+ iframe{
+  width: 100%;
+ }
+}

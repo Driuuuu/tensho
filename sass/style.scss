@@ -1,0 +1,10 @@
+/*BASE*/
+@use "base/base";
+/*lAYOUT*/
+@use "layout/header";
+@use "layout/footer";
+/*PAGES*/
+@use "pages/index";
+@use "pages/galeria";
+@use "pages/nosotros";
+@use "pages/contacto";

@@ -1,0 +1,27 @@
+// mixins/_gallery.scss
+@use "../vars/variables" as *;
+
+@mixin gallery-grid($cols-mobile: 1, $cols-tablet: 2, $cols-desktop: 6, $row-height: 250px, $gap: 10px) {
+  display: grid;
+  grid-template-columns: repeat($cols-mobile, 1fr);
+  grid-auto-rows: $row-height;
+  gap: $gap;
+  overflow: hidden;
+  justify-items: stretch;
+
+  @media (min-width: 576px) {
+    grid-template-columns: repeat($cols-tablet, 1fr);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat($cols-desktop, 1fr);
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    min-width: 50px;
+  }
+}

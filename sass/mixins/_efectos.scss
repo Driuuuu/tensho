@@ -1,0 +1,25 @@
+@keyframes to-grayscale {
+  0% {
+    filter: grayscale(0%);
+  }
+  100% {
+    filter: grayscale(100%);
+  }
+}
+
+@keyframes from-grayscale {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+@mixin grayscale-hover($duration: 0.3s) {
+  animation: from-grayscale $duration forwards;
+
+  &:hover {
+    animation: to-grayscale $duration forwards;
+  }
+}

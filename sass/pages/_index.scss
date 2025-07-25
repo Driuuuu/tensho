@@ -1,0 +1,80 @@
+@use "../vars/variables" as *;
+.banner {
+  background: url(https://i.pinimg.com/originals/30/06/56/300656e42d74b106e0879e2467afd407.jpg);
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-color: $color-negro-medio;
+  background-blend-mode: darken;
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    color: $color-blanco;
+    &__title {
+      font-weight: 700;
+    }
+    &__btn {
+      border-radius: 100px;
+      background-color: $color-negro;
+      color: $color-blanco;
+      padding: 0.5rem 1.5rem;
+      text-decoration: auto;
+      width: min-content;
+      font-weight: 600;
+
+      &:hover {
+        background-color: $color-gris;
+      }
+    }
+  }
+}
+
+.artist {
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    min-height: 450px;
+    position: relative;
+    padding: 1rem;
+    color: $color-blanco;
+    z-index: 1;
+    text-decoration: none;
+    &:after {
+      content: "";
+      background: linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(87, 199, 133, 0) 100%,
+        rgba(237, 221, 83, 1) 100%
+      );
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &--bg01,
+    &--bg02,
+    &--bg03 {
+      background-size: cover;
+      background-position: center;
+    }
+    &--bg01 {
+      background-image: url(../images/artista-1.jpg);
+    }
+
+    &--bg02 {
+      background-image: url(../images/artista-2.avif);
+    }
+
+    &--bg03 {
+      background-image: url(../images/artista-3.avif);
+    }
+  }
+}

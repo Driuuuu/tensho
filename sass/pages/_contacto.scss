@@ -1,0 +1,36 @@
+@use "../vars/variables" as *;
+.contact-banner {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $color-negro;
+  color: $color-blanco;
+  .rrss {
+    display: flex;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: $color-blanco;
+    }
+  }
+}
+
+.form {
+  textarea.form-control {
+    min-height: 300px;
+    height: auto;
+  }
+  &__btn {
+    background-color: $color-negro;
+    color: $color-blanco;
+    padding: 0.5rem 1.5rem;
+    text-decoration: auto;
+    width: min-content;
+    font-weight: 600;
+    margin-top: 1rem;
+    &:hover {
+      background-color: $color-gris;
+    }
+  }
+}
