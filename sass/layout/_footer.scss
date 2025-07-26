@@ -1,6 +1,6 @@
 @use "../vars/variables" as *;
 footer {
-  background-image: url(../../images/footer.jpg);
+  background-image: url(../images/footer.jpg);
   background-size: cover;
   background-color: $color-negro-transparente;
   background-blend-mode: overlay; 
