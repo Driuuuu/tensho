@@ -65,7 +65,7 @@ footer {
 
 /*PAGES*/
 .banner {
-  background: url(https://i.pinimg.com/originals/30/06/56/300656e42d74b106e0879e2467afd407.jpg);
+  background: url(../images/background.jpg);
   height: 50vh;
   display: flex;
   align-items: center;
