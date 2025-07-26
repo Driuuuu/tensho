@@ -54,7 +54,7 @@ nav.navbar .nav-link:hover::after {
 }
 
 footer {
-  background-image: url(../../images/footer.jpg);
+  background-image: url(../images/footer.jpg);
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.8901960784);
   background-blend-mode: overlay;
