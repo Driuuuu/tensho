@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contacto | Tensho Gallery Ink</title>
+    <meta name="description" content="¿Tienes dudas o deseas unirte a nuestra galería? Contáctanos en Tensho Gallery Ink. Estamos listos para responder tus consultas o recibir tus propuestas como artista.">
+    <meta name="keywords" content="contacto tatuajes, formulario contacto, galería de tatuajes, artistas tatuadores, Tensho Gallery Ink">
+    <meta name="author" content="Tensho Gallery Ink">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -17,7 +20,7 @@
     <header>
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="../index.html">Tensho Gallery Ink</a>
+          <a class="navbar-brand" href="../index.html" aria-label="Volver a inicio - Tensho Gallery Ink">Tensho Gallery Ink</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -58,11 +61,11 @@
     <!-- Main -->
     <main>
       <!-- Banner Contacto -->
-      <section class="contact-banner p-5">
+      <section class="contact-banner p-5" aria-labelledby="contacto-titulo">
         <div class="container">
           <div class="row">
             <div class="col-12">
-              <h2 class="fw-bold">Contacto</h2>
+              <h2 class="fw-bold" id="contacto-titulo">Contacto</h2>
               <p>
                 ¿Tienes dudas, sugerencias o quieres formar parte de nuestra galería?
 
@@ -114,8 +117,9 @@ También puedes encontrarnos en nuestras redes sociales.
               <div class="form-floating mb-3">
                 <input
                   type="text"
+                  name="nombre"
                   class="form-control"
-                  id="floatingInput"
+                  id="nombre"
                   placeholder="Juan Delgado Perez Perez"
                 />
                 <label for="floatingInput">Nombre Completo</label>
@@ -123,8 +127,9 @@ También puedes encontrarnos en nuestras redes sociales.
               <div class="form-floating mb-3">
                 <input
                   type="text"
+                  name="telefono"
                   class="form-control"
-                  id="floatingInput"
+                  id="telefono"
                   placeholder="9 12345678"
                 />
                 <label for="floatingInput">Teléfono</label>
@@ -134,13 +139,14 @@ También puedes encontrarnos en nuestras redes sociales.
               <div class="form-floating mb-3">
                 <input
                   type="email"
+                  name="correo"
                   class="form-control"
-                  id="floatingInput"
+                  id="correo"
                   placeholder="name@example.com"
                 />
                 <label for="floatingInput">Correo Electrónico</label>
               </div>
-              <select class="form-select mb-3" aria-label="asunto">
+              <select class="form-select mb-3" aria-label="asunto" name="asunto" id="asunto">
                 <option selected="">Asunto</option>
                 <option value="1">Cotización</option>
                 <option value="2">Consulta General</option>
@@ -169,7 +175,7 @@ También puedes encontrarnos en nuestras redes sociales.
       <div class="container">
         <div class="row text-end">
           <div class="col-12">
-            <p>Copyright 2025.</p>
+            <p>2025 Tensho Gallery Ink. Todos los derechos reservados.</p>
           </div>
         </div>
       </div>
