@@ -1,13 +1,14 @@
 @use "../vars/variables" as *;
 .banner {
-  background: url(../images/background.jpg);
+  background: url(../images/main-banner.avif);
   height: 50vh;
   display: flex;
   align-items: center;
   background-size: cover;
   background-color: $color-negro-medio;
   background-blend-mode: darken;
-
+  background-position: center;
+  
   &-content {
     display: flex;
     flex-direction: column;
