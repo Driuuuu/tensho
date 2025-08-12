@@ -65,13 +65,14 @@ footer {
 
 /*PAGES*/
 .banner {
-  background: url(../images/background.jpg);
+  background: url(../images/main-banner.avif);
   height: 50vh;
   display: flex;
   align-items: center;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.3019607843);
   background-blend-mode: darken;
+  background-position: center;
 }
 .banner-content {
   display: flex;
