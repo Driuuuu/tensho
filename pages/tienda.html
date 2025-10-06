@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda | Tensho Gallery Ink</title>
+    <meta
+      name="description"
+      content="Descubre y compra productos únicos de artistas tatuadores en Tensho Gallery Ink. Tienda online con productos exclusivos de arte corporal, accesorios y más."
+    />
+    <meta
+      name="keywords"
+      content="tienda tatuajes, productos tatuadores, Tensho Gallery Ink, arte corporal, accesorios tattoo, tienda online"
+    />
+    <meta name="author" content="Tensho Gallery Ink" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Menú -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="../index.html"
+            aria-label="Volver al Inicio - Tensho Gallery Ink"
+            >Tensho Gallery Ink</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./nosotros.html"
+                  >Nosotros</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./carrito.html">
+                  <i class="bi bi-cart2"></i>
+                  <span class="badge rounded-pill" id="carrito-badge">
+                    0
+                  </span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Menú -->
+
+    <!-- Main -->
+    <main>
+      <section class="store my-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-4 col-lg-3 mb-4">
+              <p class="fs-4 fw-bold">Filtros</p>
+              <hr />
+              <div class="categorias">
+                <p class="fw-bold mb-3">Categorías</p>
+                <div id="filtro-categorias"></div>
+              </div>
+
+              <hr />
+              <div class="precios">
+                <p class="fw-bold mb-3">Precios</p>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="1"
+                    id="checkChecked-3"
+                  />
+                  <label class="form-check-label" for="checkChecked-3"
+                    >Hasta $10.000</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="2"
+                    id="checkChecked-4"
+                  />
+                  <label class="form-check-label" for="checkChecked-4"
+                    >De $11.000 a $30.000</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="3"
+                    id="checkChecked-5"
+                  />
+                  <label class="form-check-label" for="checkChecked-5"
+                    >De $30.000 a $50.000</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value="4"
+                    id="checkChecked-6"
+                  />
+                  <label class="form-check-label" for="checkChecked-6">
+                    Más de $50.000
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-8 col-lg-9">
+              <div class="row" id="lista-productos"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Inicio  Offcanvas -->
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="carritoOffcanvas"
+        aria-labelledby="carritoOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 id="carritoOffcanvasLabel" class="mb-0 fw-bold">
+            Carrito de Compras
+          </h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Cerrar"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div id="carrito-lista"></div>
+          <hr />
+          <p class="fs-5 d-flex justify-content-between align-items-center">
+            <span class="fw-bold">Total productos:</span>
+            <span id="total-cantidad">0</span>
+          </p>
+          <p class="fs-5 d-flex justify-content-between align-items-center">
+            <span class="fw-bold">Total a pagar:</span
+            ><span id="total-precio">0</span>
+          </p>
+          <a class="btn w-100 ver-carrito mt-4" href="../pages/carrito.html"
+            >Ver carrito</a
+          >
+        </div>
+      </div>
+      <!-- Fin Offcanvas -->
+    </main>
+    <!-- Fin Main -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row text-end">
+          <div class="col-12">
+            <p>2025 Tensho Gallery Ink. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/store.js"></script>
+    <script src="../js/badge-cart.js"></script>
+  </body>
+</html>

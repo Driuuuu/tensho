@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Carrito de Compras | Tensho Gallery Ink</title>
+    <meta
+      name="description"
+      content="Revisa y gestiona los productos que agregaste a tu carrito en Tensho Gallery Ink. Finaliza tu compra de arte corporal, insumos y accesorios exclusivos."
+    />
+    <meta
+      name="keywords"
+      content="carrito de compras, tienda tatuajes, Tensho Gallery Ink, arte corporal, productos tattoo, accesorios tatuadores"
+    />
+    <meta name="author" content="Tensho Gallery Ink" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!-- Menú -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a
+            class="navbar-brand"
+            href="../index.html"
+            aria-label="Volver a inicio - Tensho Gallery Ink"
+            >Tensho Gallery Ink</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar"
+            aria-controls="navbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contacto.html"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin Menú -->
+    <!-- Main -->
+    <main class="container mt-4">
+      <section class="cart">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-end">
+              <a href="../pages/tienda.html">Seguir Comprando</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h2>Productos en el Carrito</h2>
+            </div>
+          </div>
+
+          <div id="carrito-contenido" class="row"></div>
+        </div>
+      </section>
+    </main>
+    <!-- Fin Main -->
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row text-end">
+          <div class="col-12">
+            <p>2025 Tensho Gallery Ink. Todos los derechos reservados.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Fin Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/cart.js"></script>
+  </body>
+</html>

@@ -87,7 +87,9 @@ footer {
   background-color: #000000;
   color: #ffffff;
   padding: 0.5rem 1.5rem;
-  text-decoration: auto;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
+  width: -moz-min-content;
   width: min-content;
   font-weight: 600;
 }
@@ -157,8 +159,10 @@ footer {
 }
 .gallery-grid img {
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   animation: from-grayscale 0.4s forwards;
 }
@@ -186,8 +190,10 @@ footer {
 }
 .gallery-01 .gallery-grid img {
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   min-width: 50px;
 }
@@ -230,8 +236,10 @@ footer {
 }
 .gallery-02 .gallery-grid img {
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   min-width: 50px;
 }
@@ -272,8 +280,10 @@ footer {
 }
 .gallery-03 .gallery-grid img {
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   width: 100%;
   min-width: 50px;
 }
@@ -348,7 +358,9 @@ footer {
   background-color: #000000;
   color: #ffffff;
   padding: 0.5rem 1.5rem;
-  text-decoration: auto;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
+  width: -moz-min-content;
   width: min-content;
   font-weight: 600;
   margin-top: 1rem;
@@ -357,4 +369,48 @@ footer {
   background-color: #6d6d6d;
 }
 
-/*# sourceMappingURL=style.css.map */
+main {
+  min-height: 100vh;
+}
+
+.store .card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.store .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.store .card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.store .card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+}
+.store .agregar-carrito {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.offcanvas .ver-carrito {
+  background-color: #ffffff;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 0.5rem 1.5rem;
+  -webkit-text-decoration: auto;
+          text-decoration: auto;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

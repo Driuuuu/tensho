@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "categoria": "tintas",
+    "imagen": "tinta-1.jpg",
+    "nombre": "TINTA RADIANT EMERALD",
+    "stock": 9,
+    "descripcion": "Fecha mínima de expiración  01/10/26",
+    "precio": 11790
+  },
+  {
+    "id": 2,
+    "categoria": "tintas",
+    "imagen": "tinta-2.jpg",
+    "nombre": "TINTA RADIANT FUSCHIA",
+    "stock": 4,
+    "descripcion": "Fecha mínima de expiración  01/03/28",
+    "precio": 11790
+  },
+  {
+    "id": 3,
+    "categoria": "tintas",
+    "imagen": "tinta-3.jpg",
+    "nombre": "TINTA RADIANT GRAPE",
+    "stock": 5,
+    "descripcion": "Fecha mínima de expiración  01/03/29",
+    "precio": 11790
+  },
+  {
+    "id": 4,
+    "categoria": "tintas",
+    "imagen": "tinta-4.jpg",
+    "nombre": "TINTA RADIANT HOLLYWOOD TURQUOISE",
+    "stock": 10,
+    "descripcion": "Fecha mínima de expiración  01/11/28",
+    "precio": 11790
+  },
+  {
+    "id": 5,
+    "categoria": "tintas",
+    "imagen": "tinta-5.jpg",
+    "nombre": "TINTA RADIANT LAVENDER",
+    "stock": 2,
+    "descripcion": "Fecha mínima de expiración  01/04/29",
+    "precio": 6990
+  },
+  {
+    "id": 6,
+    "categoria": "tintas",
+    "imagen": "tinta-6.jpg",
+    "nombre": "TINTA RADIANT LIME GREEN",
+    "stock": 1,
+    "descripcion": "Fecha mínima de expiración  01/01/29",
+    "precio": 6990
+  },
+  {
+    "id": 7,
+    "categoria": "tintas",
+    "imagen": "tinta-7.jpg",
+    "nombre": "TINTA RADIANT LILAC",
+    "stock": 4,
+    "descripcion": "Fecha mínima de expiración  01/11/26",
+    "precio": 6990
+  },
+  {
+    "id": 8,
+    "categoria": "tintas",
+    "imagen": "tinta-8.jpg",
+    "nombre": "TINTA RADIANT LEMON YELLOW",
+    "stock": 4,
+    "descripcion": "Fecha mínima de expiración  01/04/28",
+    "precio": 11790
+  },
+  {
+    "id": 9,
+    "categoria": "tintas",
+    "imagen": "tinta-9.jpg",
+    "nombre": "TINTA RADIANT MEDIUM BROWN",
+    "stock": 2,
+    "descripcion": "Fecha mínima de expiración  01/03/28",
+    "precio": 11790
+  },
+  {
+    "id": 10,
+    "categoria": "accesorios",
+    "imagen": "accesorio-1.png",
+    "nombre": "PULVERIZADOR BOTELLA 500ML",
+    "stock": 20,
+    "descripcion": "Plástico resistente y diseño cómodo",
+    "precio": 5990
+  },
+  {
+    "id": 11,
+    "categoria": "accesorios",
+    "imagen": "accesorio-2.png",
+    "nombre": "BARRIER FILM 1200U 10x15CM",
+    "stock": 40,
+    "descripcion": "Película adhesiva de polietileno destinada a la protección de superficies expuestas a contaminación",
+    "precio": 10990
+  },
+  {
+    "id": 11,
+    "categoria": "accesorios",
+    "imagen": "accesorio-4.jpg",
+    "nombre": "CAJA PAPEL TERMOGRÁFICO OZER TAMAÑO CARTA 50U",
+    "stock": 12,
+    "descripcion": "El patrón de impresión es más abundante y la diferencia entre líneas gruesas y finas es más evidente.",
+    "precio": 21990
+  },
+  {
+    "id": 12,
+    "categoria": "accesorios",
+    "imagen": "accesorio-5.png",
+    "nombre": "ORGANIZADOR PARA TINTAS 5 NIVELES",
+    "stock": 3,
+    "descripcion": "Capacidad 50 tintas de 1oz",
+    "precio": 21990
+  },
+  {
+    "id": 13,
+    "categoria": "higiene",
+    "imagen": "higiene-1.png",
+    "nombre": "LIMPIADOR DE AGUJAS INALAMBRICO",
+    "stock": 6,
+    "descripcion": "Limpiador de agujas inalámbrico, ideal para cuando cambies de color en el proceso del tatuaje.",
+    "precio": 140990
+  },
+  {
+    "id": 14,
+    "categoria": "higiene",
+    "imagen": "higiene-2.png",
+    "nombre": "CAJA GUANTES MACHTIG R2 NITRILO ROSADO",
+    "stock": 6,
+    "descripcion": "Texturizado en los dedos para un agarre confiable y consistente.",
+    "precio": 4990
+  },
+  {
+    "id": 14,
+    "categoria": "higiene",
+    "imagen": "higiene-3.png",
+    "nombre": "MASCARILLA DESECHABLE COLOR",
+    "stock": 52,
+    "descripcion": "Caja mascarilla 50 unidades",
+    "precio": 4990
+  }
+]

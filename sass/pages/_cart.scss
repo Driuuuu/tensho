@@ -1,0 +1,50 @@
+@use "../vars/variables" as *;
+main {
+  min-height: 100vh;
+}
+.store {
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .card-title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    overflow: hidden;
+  }
+
+  .card-text {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+
+  .agregar-carrito {
+    background-color: $color-negro;
+    color: $color-blanco;
+  }
+}
+
+.offcanvas {
+  .ver-carrito {
+    background-color: $color-blanco;
+    color: $color-negro;
+    border: 1px solid $color-negro;
+    border-radius: 100px;
+    padding: 0.5rem 1.5rem;
+    text-decoration: auto;
+    font-weight: 600;
+  }
+}
