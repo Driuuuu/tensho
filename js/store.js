@@ -12,7 +12,6 @@ const obtenerProductos = async () => {
     agregarCheckboxCategoria();
   } catch (error) {
     contenedor.innerHTML = `<p class="text">Error al cargar los productos.</p>`;
-    console.error("Error:", error);
   }
 };
 
@@ -69,7 +68,6 @@ const generarFiltrosCategoria = (productos) => {
   ];
 
   contenedor.innerHTML = "";
-  console.log(categoriasUnicas);
 
   categoriasUnicas.forEach((cat, i) => {
     const capitalizado = cat.charAt(0).toUpperCase() + cat.slice(1);
